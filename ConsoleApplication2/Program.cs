@@ -7,6 +7,7 @@ namespace ConsoleApplication2
         static void Main(string[] args)
         {
             LottoKone();
+            //tällä pelataan lottoa
         }
         static void LottoKone()
         {
