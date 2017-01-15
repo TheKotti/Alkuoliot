@@ -10,28 +10,72 @@ namespace T19
     {
         static void Main(string[] args)
         {
-            string sana = "Jotain tosi luovaa";
+            string[] randomSanat = new string[5] { "jotain tosi luovaa", "lorem ipsum", "en jaksa keksiä mitään", "tämä on hirsipuu", "satunnainen teksti"};
+            Random rnd = new Random();
+
+            string sana = randomSanat[rnd.Next(0, randomSanat.Length)];
             char[] arvattava = sana.ToCharArray();
-            char[] arvatut = new char[30];
-            arvatut[0] = 't';
-            arvatut[1] = 'a';
-            int ind = 0;
+            char[] arvatut = new char[10];
+            arvatut[0] = ' ';
+            int ind = 1;
+            bool written = true;
+            string finalArvaus;
+            char tempKirjain;
 
+            Console.WriteLine("Hirsipuu - Arvaa teksti antamalla pieni kirjain");
 
-
-            for (int i = 0; i < arvattava.Length; i++)
+            do
             {
-                if (arvattava[i] == arvatut[ind])
+                Console.WriteLine("Kirjain {0}, arvauksia jäljellä {1}", ind, (10-ind));
+                if (Char.TryParse(Console.ReadLine(), out tempKirjain))
                 {
-                    Console.Write(arvattava[i]);
+                    if (Array.IndexOf(arvatut, tempKirjain) > -1)
+                    {
+                        Console.WriteLine("Olet jo arvannut tämä kirjaimen");
+                    }
+                    else
+                    {
+                        arvatut[ind] = tempKirjain;
+                        ind++;
+                        for (int i = 0; i < arvattava.Length; i++)
+                        {
+
+                            foreach (var kirjain in arvatut)
+                            {
+                                if (arvattava[i] == kirjain)
+                                {
+                                    Console.Write(arvattava[i]);
+                                    written = true;
+                                }
+                            }
+                            if (written == false)
+                            {
+                                Console.Write("_");
+                                written = true;
+                            }
+                            written = false;
+                        }
+                        Console.WriteLine();
+                        Console.WriteLine();
+                    } 
                 }
                 else
                 {
-                    Console.Write("_");
+                    Console.WriteLine("Kirjain ei kelpaa");
                 }
-            }
-            Console.WriteLine();
+            } while (ind < 10);
 
+            Console.WriteLine("Kirjaimet käytetty, arvaa teksti");
+            finalArvaus = Console.ReadLine();
+            Console.WriteLine();
+            if (finalArvaus == sana)
+            {
+                Console.WriteLine("Voitit pelin");
+            }
+            else
+            {
+                Console.WriteLine("Hävisit pelin");
+            }
         }
     }
 }
