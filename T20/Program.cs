@@ -12,7 +12,7 @@ namespace T20
             Random rndTime = new Random();
             int pauseTime = rndTime.Next(2500, 9001);
             ConsoleKeyInfo input;
-            bool written = false, written2 = false;
+            bool written = false;
             Stopwatch kello = new Stopwatch();
             Stopwatch endTimer = new Stopwatch();
             Thread.Sleep(1);
@@ -90,6 +90,7 @@ namespace T20
                             endTimer.Start();
                         }
                     }
+
                     while (true)
                     {
                         if (endTimer.ElapsedMilliseconds > 1000)

@@ -9,6 +9,7 @@ namespace ConsoleApplication2
             LottoKone();
             //tällä pelataan lottoa
             //Toinen kommentti ja muutos jee
+            //kolmas
         }
         static void LottoKone()
         {
