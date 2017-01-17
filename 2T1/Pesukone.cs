@@ -11,5 +11,6 @@ namespace JAMK.IT
         public bool SaakoVirtaa { get; set; }
         public bool SaakoVetta { get; set; }
         public bool OnkoPaalla { get; set; }
+
     }
 }

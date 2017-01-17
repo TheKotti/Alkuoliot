@@ -12,7 +12,9 @@ namespace _2T1
         static void Main(string[] args)
         {
             //TestaaKiuas();
-            TestaaPesukone();
+            //TestaaPesukone();
+            //TestaaTV();
+            TestaaVehicle();
         }
 
         //T1 Kiuas-luokan testaus
@@ -42,17 +44,38 @@ namespace _2T1
 
             //laitetaan lämpiämään ja lämpöä ja kosteutta
             kone.SaakoVirtaa = true;
-            kone.Lampotila = 90;
-            kone.Kosteus = 50;
+            kone.SaakoVetta = true;
+            kone.OnkoPaalla = true;
 
             //näytetään konsolilla
-            Console.WriteLine("Pesukone on päällä {0}", );
-            Console.WriteLine("Lämpötila on {0}", );
-            Console.WriteLine("Pesukone kosteus {0}", );
+            Console.WriteLine("Pesukone saa virtaa {0}", kone.OnkoPaalla);
+            Console.WriteLine("Pesukone saa vettä {0}", kone.SaakoVetta);
+            Console.WriteLine("Pesukone on päällä {0}", kone.OnkoPaalla);
+        }
+        static void TestaaTV()
+        {
+            TV telkkari = new JAMK.IT.TV();
 
-            //liikaa kosteutta
-            kone.Kosteus = 150;
-            Console.WriteLine("Pesukoneen kosteus {0}", );
+            telkkari.OnkoPaalla = true;
+            telkkari.Volume = 99;
+            telkkari.Kanava = 59;
+
+            Console.WriteLine("päällä {0}", telkkari.OnkoPaalla);
+            Console.WriteLine("volume {0}", telkkari.Volume);
+            Console.WriteLine("kanava {0}", telkkari.Kanava);
+            telkkari.Kanava = -5;
+            telkkari.Volume = 999;
+            Console.WriteLine("volume {0}", telkkari.Volume);
+            Console.WriteLine("kanava {0}", telkkari.Kanava);
+        }
+        static void TestaaVehicle()
+        {
+            Vehicle auto = new Vehicle();
+            auto.Name = "autoooo";
+            auto.Speed = 20;
+            auto.Tyres = 3;
+            auto.PrintData();
+            Console.WriteLine(auto.ToString());
         }
     }
 }
