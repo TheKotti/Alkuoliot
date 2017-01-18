@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace _2T1
 {
-    class Vehicle
+    public class Vehicle
     {
         public string Name { get; set; }
 

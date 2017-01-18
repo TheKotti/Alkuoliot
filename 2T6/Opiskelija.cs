@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace JAMK.IT
 {
-    class Opiskelija
+    public class Opiskelija
     {
         public string Nimi { get; set; }
 

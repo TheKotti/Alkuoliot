@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace JAMK.IT
 {
-    class TV
+    public class TV
     {
         public bool OnkoPaalla { get; set; }
         //äänenvoimakkuus voi olla 0-100

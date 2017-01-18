@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace JAMK.IT
 {
-    class Pesukone
+    public class Pesukone
     {
         public bool SaakoVirtaa { get; set; }
         public bool SaakoVetta { get; set; }
