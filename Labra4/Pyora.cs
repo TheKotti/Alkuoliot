@@ -29,7 +29,7 @@ namespace JAMK.IT
         }
         public override string ToString()
         {
-            if (OnkoVaihteet == true)
+            if (Vaihteet != "" && OnkoVaihteet == true)
                 return base.ToString() + ", Vaihteet: " + Vaihteet;
             else
                 return base.ToString() + ", Vaihteet: Ei ole";
