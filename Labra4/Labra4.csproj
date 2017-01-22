@@ -49,6 +49,7 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Pyora.cs" />
+    <Compile Include="Radio.cs" />
     <Compile Include="Vahvistin.cs" />
     <Compile Include="Vehicle.cs" />
     <Compile Include="Vene.cs" />

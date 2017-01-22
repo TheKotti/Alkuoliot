@@ -14,7 +14,8 @@ namespace Labra4
             //TestaaHissi();
             //TestaaVahvistin();
             //TestaaEmployee();
-            TestaaVehicle();
+            //TestaaVehicle();
+            TestaaRadio();
         }
         static void TestaaHissi()
         {
@@ -100,6 +101,17 @@ namespace Labra4
             Console.WriteLine(bike.ToString());
             Vene vene = new Vene("paatti", "Laiva", 2019, "Sininen", "Sukellusvene", 5);
             Console.WriteLine(vene.ToString());
+        }
+        static void TestaaRadio()
+        {
+            Radio radio1 = new JAMK.IT.Radio();
+            radio1.OnkoPaalla = true;
+            radio1.Volume = -1;
+            radio1.Taajuus = 4567.5432F;
+            Console.WriteLine(radio1.ToString());
+
+            Radio radio2 = new Radio(false, 5, 400000F);
+            Console.WriteLine(radio2.ToString());
         }
     }
 }
