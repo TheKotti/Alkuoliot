@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _2T1
+namespace JAMK.IT
 {
     public class Vehicle
     {
@@ -46,6 +46,10 @@ namespace _2T1
         override public string ToString()
         {
             return Name + " " + Speed + " " + Tyres;
+        }
+        public void LisaaRengas(Rengas rengas)
+        {
+
         }
     }
 }
