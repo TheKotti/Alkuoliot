@@ -42,7 +42,7 @@ namespace JAMK.IT
         }
         public override string ToString()
         {
-            return base.ToString() + ", Renkaat: " + Renkaat.Count + ", Tyyppi: " + Renkaat[0];
+            return base.ToString() + ", Renkaat: " + Renkaat.Count + ", Rengastyyppi: " + Renkaat[0];
         }
 
     }
