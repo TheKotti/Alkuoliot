@@ -48,12 +48,20 @@ namespace JAMK.IT
             Jaakaappi jk1 = new Jaakaappi("Samsung", 5);
             Ruoka olut = new IT.Ruoka("Karhu", "10/12/2015");
             Ruoka makkara = new IT.Ruoka("Grilli", "15/09/2020");
-            Console.WriteLine(makkara.Nimi);
-            Console.WriteLine(makkara.KayttoPaiva);
             Console.WriteLine(jk1.LisaaRuoka(olut));
-            jk1.LisaaRuoka(makkara);
-            Console.WriteLine(jk1.Ruuat[0].Nimi);
-            Console.WriteLine(jk1.Ruuat[1].Nimi);
+            Console.WriteLine(jk1.LisaaRuoka(makkara));
+            Console.WriteLine(jk1.LisaaRuoka(olut));
+            Console.WriteLine(jk1.LisaaRuoka(makkara));
+            Console.WriteLine(jk1.LisaaRuoka(olut));
+            Console.WriteLine(jk1.LisaaRuoka(makkara));
+            Console.WriteLine(jk1.LisaaRuoka(olut));
+            for (int i = 0; i < jk1.Ruuat.Length; i++)
+            {
+                if (jk1.Ruuat[i] != null)
+                {
+                    Console.WriteLine(jk1.Ruuat[i].Nimi + ", " + jk1.Ruuat[i].KayttoPaiva);
+                }
+            }
         }
     }
 }

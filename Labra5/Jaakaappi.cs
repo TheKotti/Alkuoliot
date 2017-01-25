@@ -18,6 +18,7 @@ namespace JAMK.IT
         //Constructors
         public Jaakaappi(string nimi, int tila)
         {
+            Tila = tila;
             Nimi = nimi;
             Ruuat = new Ruoka[tila];
         }
