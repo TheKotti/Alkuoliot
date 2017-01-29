@@ -83,6 +83,7 @@ namespace JAMK.IT
             oceanMachine.AddSong(night);
             oceanMachine.AddSong(hn);
             oceanMachine.AlbumInfoConsole();
+            Console.WriteLine(oceanMachine.CountLength());
 
 
         }

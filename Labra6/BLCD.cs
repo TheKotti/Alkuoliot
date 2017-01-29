@@ -22,8 +22,9 @@ namespace JAMK.IT
             songs = new List<Song>();
         }
 
-        private string CountLength()
+        public string CountLength()
         {
+            total = TimeSpan.Zero;
             for (int i = 0; i < songs.Count; i++)
             {
                 temp = TimeSpan.ParseExact(songs.ElementAt(i).Length, "m\\:ss", null); ;
