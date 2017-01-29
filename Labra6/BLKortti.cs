@@ -8,7 +8,7 @@ namespace JAMK.IT
 {
     class Card
     {
-        public string House { get; set; }
+        public string Suit { get; set; }
         public int Number { get; set; }
 
         public Card()
@@ -18,7 +18,7 @@ namespace JAMK.IT
 
         public override string ToString()
         {
-            return Number + " of " + House;
+            return Number + " of " + Suit;
         }
     }
 
@@ -34,19 +34,19 @@ namespace JAMK.IT
             int i = 0;
             for (i = 0; i < 13; i++)
             {
-                Cards[i] = new Card() { House = "Spades", Number = i + 1 };
+                Cards[i] = new Card() { Suit = "Spades", Number = i + 1 };
             }
             for (i = 0; i < 13; i++)
             {
-                Cards[i+13] = new Card() { House = "Hearts", Number = i + 1 };
+                Cards[i+13] = new Card() { Suit = "Hearts", Number = i + 1 };
             }
             for (i = 0; i < 13; i++)
             {
-                Cards[i+26] = new Card() { House = "Clubs", Number = i + 1 };
+                Cards[i+26] = new Card() { Suit = "Clubs", Number = i + 1 };
             }
             for (i = 0; i < 13; i++)
             {
-                Cards[i+39] = new Card() { House = "Diamonds", Number = i + 1 };
+                Cards[i+39] = new Card() { Suit = "Diamonds", Number = i + 1 };
             }
         }
         public void Shuffle()

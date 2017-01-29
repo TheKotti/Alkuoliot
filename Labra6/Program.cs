@@ -12,7 +12,8 @@ namespace JAMK.IT
         static void Main(string[] args)
         {
             //TestaaHloRekisteri();
-            TestaaKortit();
+            //TestaaKortit();
+            TestaaCD();
         }
 
         static void TestaaHloRekisteri()
@@ -51,10 +52,39 @@ namespace JAMK.IT
             }
             
             pakka.Shuffle();
+            Console.WriteLine("\nPakka on sekoitettu\n");
             foreach (var item in pakka.Cards)
             {
                 Console.WriteLine(item.ToString());
             }
+        }
+        static void TestaaCD()
+        {
+            CD slaughter = new IT.CD { Title = "Slaughter of the Soul", Artist = "At the Gates" };
+            Song bbf = new Song { Title = "Blinded By Fear", Length = "3:12" };
+            Song sots = new Song { Title = "Slaughter of the Soul", Length = "3:02" };
+            Song cold = new Song { Title = "Cold", Length = "3:28" };
+            Song utss = new Song { Title = "Under the Serpent Sun", Length = "39:58" };
+            Song itds = new Song { Title = "Into the Dead Sky", Length = "25:12" };
+            slaughter.AddSong(bbf);
+            slaughter.AddSong(sots);
+            slaughter.AddSong(cold);
+            slaughter.AddSong(utss);
+            slaughter.AddSong(itds);
+            slaughter.AlbumInfoConsole();
+            Console.WriteLine();
+            CD oceanMachine = new IT.CD { Title = "Ocean Machine", Artist = "Devin Townsend" };
+            Song sw = new Song { Title = "Seventh Wave", Length = "6:50" };
+            Song life = new Song { Title = "Life", Length = "4:31" };
+            Song night = new Song { Title = "Night", Length = "4:45" };
+            Song hn = new Song { Title = "Hide Nowhere", Length = "5:00" };
+            oceanMachine.AddSong(sw);
+            oceanMachine.AddSong(life);
+            oceanMachine.AddSong(night);
+            oceanMachine.AddSong(hn);
+            oceanMachine.AlbumInfoConsole();
+
+
         }
     }
 }
