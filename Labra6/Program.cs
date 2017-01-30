@@ -12,8 +12,8 @@ namespace JAMK.IT
         static void Main(string[] args)
         {
             //TestaaHloRekisteri();
-            //TestaaKortit();
-            TestaaCD();
+            TestaaKortit();
+            //TestaaCD();
         }
 
         static void TestaaHloRekisteri()
