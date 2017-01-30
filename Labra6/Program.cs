@@ -52,6 +52,7 @@ namespace JAMK.IT
             }
             
             pakka.Shuffle();
+
             Console.WriteLine("\nPakka on sekoitettu\n");
             foreach (var item in pakka.Cards)
             {
@@ -65,7 +66,7 @@ namespace JAMK.IT
             Song sots = new Song { Title = "Slaughter of the Soul", Length = "3:02" };
             Song cold = new Song { Title = "Cold", Length = "3:28" };
             Song utss = new Song { Title = "Under the Serpent Sun", Length = "39:58" };
-            Song itds = new Song { Title = "Into the Dead Sky", Length = "25:12" };
+            Song itds = new Song { Title = "Into the Dead Sky", Length = "55:12" };
             slaughter.AddSong(bbf);
             slaughter.AddSong(sots);
             slaughter.AddSong(cold);
