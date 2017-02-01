@@ -15,7 +15,7 @@ namespace JAMK.IT
     {
         static void Main(string[] args)
         {
-            Teht4();
+            Teht3();
         }
 
         static void Teht1()
@@ -68,13 +68,10 @@ namespace JAMK.IT
         {
             try
             {
-                //List<int> intit = new List<int>();
-                //List<float> floatit = new List<float>();
                 int conversion = 0;
                 float conversion2 = 0.0F;
                 string path = @"d:\K8721\ConsoleApplication2\Labra7", temp;
 
-                
                 do
                 {
                     Console.WriteLine("Anna int tai float, kaikki muu lopettaa");
@@ -92,7 +89,6 @@ namespace JAMK.IT
                         outputFile.WriteLine(conversion2);
                         outputFile.Close();
                     }
-                    //outputFile.Close(); menee tähän ja pois noista muista
                 } while (float.TryParse(temp, out conversion2) || int.TryParse(temp, out conversion));
             }
             catch (Exception ex)
