@@ -12,7 +12,7 @@ namespace JAMK.IT
         {
             try
             {
-                T3();
+                T5();
             }
             catch (Exception ex)
             {
@@ -133,6 +133,14 @@ namespace JAMK.IT
                 Console.WriteLine("  - " + rami.KalaLista.ElementAt(i).ToString());
             }
 
+        }
+        static void T5()
+        {
+            double[] array = { 1.0, 2.0, 3.3, 5.5, 6.3, -4.5, 12.0 };
+            Console.WriteLine(ArrayCalcs.Sum(array));
+            Console.WriteLine(ArrayCalcs.Average(array));
+            Console.WriteLine(ArrayCalcs.Max(array));
+            Console.WriteLine(ArrayCalcs.Min(array));
         }
     }
 }

@@ -67,6 +67,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LaskinDemoTests", "LaskinDe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Labra8", "Labra8\Labra8.csproj", "{DCFD6ADE-334F-463E-AA3F-858DEA15FDF0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Labra8Tests", "Labra8Tests\Labra8Tests.csproj", "{1AA83B3F-0438-45A9-BC19-8FBBEB181A9C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -193,6 +195,10 @@ Global
 		{DCFD6ADE-334F-463E-AA3F-858DEA15FDF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DCFD6ADE-334F-463E-AA3F-858DEA15FDF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DCFD6ADE-334F-463E-AA3F-858DEA15FDF0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1AA83B3F-0438-45A9-BC19-8FBBEB181A9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1AA83B3F-0438-45A9-BC19-8FBBEB181A9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1AA83B3F-0438-45A9-BC19-8FBBEB181A9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1AA83B3F-0438-45A9-BC19-8FBBEB181A9C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
