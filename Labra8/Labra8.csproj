@@ -7,7 +7,7 @@
     <ProjectGuid>{DCFD6ADE-334F-463E-AA3F-858DEA15FDF0}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Labra8</RootNamespace>
+    <RootNamespace>JAMK.IT</RootNamespace>
     <AssemblyName>Labra8</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
@@ -44,9 +44,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ArraCalcs.cs" />
+    <Compile Include="BLInvoice.cs" />
     <Compile Include="BLNoppa.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Shape.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
